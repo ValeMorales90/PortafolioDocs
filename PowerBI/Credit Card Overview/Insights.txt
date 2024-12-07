@@ -1,0 +1,73 @@
+Insights:
+
+Este análisis se desarrolló utilizando datasets provenientes de Kaggle con fines demostrativos. Se realizaron diversas transformaciones y análisis para obtener insights clave sobre las transacciones, los ingresos y deudas de los usuarios, así como datos relacionados con las tarjetas de crédito y débito.
+
+Pasos del Proceso de Análisis
+- Ingreso de Datos: Importación de archivos en formatos .csv y .json.
+- Revisión Inicial: Exploración y validación preliminar de la calidad de los datos.
+Transformación de Datos:
+- Conversión de tipos de datos incorrectos.
+- Eliminación de columnas nulas y registros sin identificación válida (ID).
+- Creación de Relaciones: Establecimiento de relaciones entre tablas (por ejemplo, mcc-mcc_id).
+- Agrupación de Datos: Generación de nuevas agrupaciones relevantes (como compras por continente).
+- Creación de Nuevas Variables: Desarrollo de columnas para clasificación etaria mediante sentencias condicionales.
+Observaciones Generales
+- Los datos están mayormente limpios.
+- No es posible relacionar la información de las tablas card_data y user_data debido a la inconsistencia de los IDs. Por lo tanto, los análisis se realizaron de forma aislada para cada hoja.
+Insights Clave
+Hoja 1: Total Transactions
+
+Distribución Geográfica de Compras:
+- El 88% de las compras provienen de América del Norte.
+- El resto (12%) se distribuye entre América Latina, Europa, Asia, Oceanía y África.
+- Ciudades con Mayor Transacciones en América del Norte:
+- Houston: 114,243 transacciones por $674.7M USD.
+- Miami: 7,782 transacciones por $55.4M USD.
+- San Francisco: 4,121 transacciones por $28.8M USD.
+Modalidad de Compras:
+- 89% transacciones presenciales.
+- 11% transacciones online (sin identificación del país de origen).
+Tipos de Transacción Más Frecuentes:
+- Transferencias de dinero: $429M USD.
+- Compras en tiendas y supermercados: $324M USD.
+- Tiendas por mayor: $305M USD.
+Errores de Transacción:
+- Total: 16,359 errores.
+- Principales causas: Saldo insuficiente (62%), PIN incorrecto (15%), problemas técnicos (13%).
+
+Tendencia Trimestral:
+- Las transacciones son estables (~100,000 por trimestre), excepto una caída abrupta de octubre (106,142) a noviembre (19,297).
+
+Hoja 2: Income/Debt
+Demografía de los Usuarios:
+- 49% hombres y 51% mujeres.
+Ingresos y Deudas Promedio:
+- Los ingresos promedios son similares entre géneros, con una diferencia de $1,000 a favor de las mujeres.
+- La deuda promedio de los hombres es $1,000 mayor que la de las mujeres.
+Deuda por Grupos Etarios:
+Deuda promedio: $13,426 USD.
+- Las deudas más altas se observan en jóvenes, mientras que disminuyen significativamente en adultos mayores (65+).
+Tendencias en Deudas:
+- Peaks de deuda a los 54 años, y nuevamente entre 60-73 años.
+- Usuarios de 80 años presentan diferencias de deuda de +$26,000 USD frente a sus ingresos.
+Número de Tarjetas por Grupo Etario:
+- Jóvenes: 4 tarjetas.
+- Adultos: 3 tarjetas.
+- Senior (mujeres): 4 tarjetas; hombres: 3 tarjetas.
+- Elderly (mujeres): 5 tarjetas; hombres: 4 tarjetas.
+
+Hoja 3: Card Data
+Fechas de Obtención de Tarjetas:
+- Febrero es el mes con mayor emisión de tarjetas en el periodo 1991-2020.
+Tipos de Tarjetas Emitidas:
+- Predominio de tarjetas de débito y crédito.
+- En 1991, las tarjetas de crédito superaron a las de débito con un 66%.
+Límite de Crédito:
+- Las tarjetas de débito tienen un límite agregado superior por $43M USD frente a las de crédito.
+
+
+
+
+
+
+
